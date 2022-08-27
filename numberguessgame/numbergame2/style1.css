@@ -1,0 +1,78 @@
+body{
+    background-image: url("https://cdn.koreaeaglenews.com/news/photo/202201/37027_49401_1037.jpg");
+    background-repeat: no-repeat;
+    width: 960px;
+    margin: 0 auto;
+    color: red;
+    font-size:30px;
+    font-family: 'Black And White Picture', sans-serif;
+    height:100vh;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+@media(max-width:960px){
+    body{width:90%;}
+}
+
+@media(max-width:768px){
+    body{width:100%;}
+ }
+   
+
+@media(max-width:480px){
+    body{width:90%;}
+}
+
+.box{
+    width:600px;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgba(226, 226, 226, 0.7);
+    border:border-box;
+}
+
+.title{
+    color:black;}
+
+.img{
+    width:300px;}
+
+.bt{
+    width: 120px;
+    padding: 0;
+    margin: 10px 20px 10px 0;
+    font-size:25px;
+    font-family: 'Black And White Picture', sans-serif;
+    text-align: center;
+    line-height: 30px;
+    background: black;
+    color: red;
+    border-radius: 5px;
+}
+
+.bt:hover{
+    transform: scale(1.1);
+}
+
+.bt:disabled{
+    color:gray;
+    transform: none;
+}
+
+input{
+    width: 200px;
+    height: 32px;
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 20px;
+    background-color: rgb(233, 233, 233);
+}

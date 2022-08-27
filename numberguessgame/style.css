@@ -1,78 +1,99 @@
-body{
-    background-image: url("https://cdn.koreaeaglenews.com/news/photo/202201/37027_49401_1037.jpg");
-    background-repeat: no-repeat;
-    width: 960px;
-    margin: 0 auto;
-    color: red;
-    font-size:30px;
-    font-family: 'Black And White Picture', sans-serif;
-    height:100vh;
-    background-size: cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-@media(max-width:960px){
-    body{width:90%;}
-}
-
-@media(max-width:768px){
-    body{width:100%;}
- }
-   
-
-@media(max-width:480px){
-    body{width:90%;}
-}
-
-.box{
-    width:600px;
-    height: auto;
-    border: 5px solid black;
-    border-radius: 15px;
-    text-align: center;
-    background-color: rgba(226, 226, 226, 0.7);
-    border:border-box;
-}
-
-.title{
-    color:black;}
-
-.img{
-    width:300px;}
-
-.bt{
-    width: 120px;
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+* {
     padding: 0;
-    margin: 10px 20px 10px 0;
-    font-size:25px;
-    font-family: 'Black And White Picture', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: 'galmuri9'; 
+    color: #FDEEDC;
+}
+body{
+    background-color: #DE922E;
+}
+img{
+   margin-bottom: 10px;
+   border-radius: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 120px 0;
+    display: table;
+}
+.main{
     text-align: center;
-    line-height: 30px;
-    background: black;
-    color: red;
-    border-radius: 5px;
+    margin-bottom: 20px;
 }
-
-.bt:hover{
-    transform: scale(1.1);
+h1 {
+    margin-bottom: 10px;
+    font-size: 35px;
 }
-
-.bt:disabled{
-    color:gray;
-    transform: none;
+#result__area {
+    margin-bottom: 10px;
+    font-size: 20px;
 }
-
-input{
-    width: 200px;
-    height: 32px;
-    font-family: 'Black And White Picture', sans-serif;
-    font-size: 18px;
-    border: 0;
+#chance__area {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+/* button */
+#playbutton {
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
     border-radius: 15px;
-    outline: none;
-    padding-left: 20px;
-    background-color: rgb(233, 233, 233);
+    font-family: 'galmuri9'; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    color: #333;
+    margin-left: 70px;
 }
+.w-btn-outline {
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: 'galmuri9'; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+#playbutton:hover {
+    background:#FFD8A9;
+    outline: 0;
+}
+#resetbutton {
+    margin-left: 10px;
+    border: none;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: 'galmuri9'; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+    color: #333;
+}
+#resetbutton:hover {
+    background:#FFD8A9;
+    outline: 0;
+}
+
+/* input css */
+.search__input {
+    display: block;
+    width: 300px;
+    padding: 12px 24px;
+    margin-left: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    margin-bottom: 10px;
+}
+
