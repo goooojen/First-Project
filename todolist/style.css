@@ -19,6 +19,9 @@
     min-height: 100vh;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     padding-top: 30px;
+    max-width: 700px;
+    border-top: 5px solid pink;
+    border-bottom: 5px solid pink;
 }
 
 body {
@@ -30,6 +33,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .input-area {
@@ -76,20 +80,48 @@ h1 {
 
 .task-done {
     text-decoration: line-through;
-    background: #f2f2f2 cover;
+    color: gray;
 }
 
 .task-tabs div {
     cursor: pointer;
 }
 
-button {
-    background-color: white;
-    border-style: none;
-    padding: 5px;
+.btnbox {
+    display: flex;
+    position: relative;
 }
-
+.btnbox button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin-right: 10px;
+}
+#addbutton {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+}
+#addbutton:hover {
+    color: darkgray;
+}
 p {
     text-align: center;
+    font-size: 15px;
 }
 
+.fa-arrow-rotate-left{
+    margin-right: 10px;
+}
+.fa-arrow-rotate-left:hover {
+    color: darkgray;
+}
+.fa-circle-check {
+    margin-right: 10px;
+}
+.fa-circle-check:hover {
+    color: darkgray;
+}
+
+.fa-square-minus:hover {
+    color: darkgray;
+}

@@ -47,10 +47,10 @@ function render(){ //ui upate
     let resultHTML = ''; //string변수
     for(let i=0; i<list.length; i++){
         if(list[i].isComplete == true){
-            resultHTML+= `<div class="task">
-            <div class="task-done">${list[i].taskContent}</div>
-            <div>
-                <button onclick="toggleComplete('${list[i].id}')"><i class="fa-solid fa-circle-check"></i></button></i>
+            resultHTML+= `<div class="task task-done">
+            <div>${list[i].taskContent}</div>
+            <div class="btnbox">
+                <button onclick="toggleComplete('${list[i].id}')"><i class="fa-solid fa-arrow-rotate-left"></i></button></i>
                 <button onclick="deleteTask('${list[i].id}')"><i class="fa-solid fa-square-minus"></i></button>
             </div>
         </div>`;
@@ -58,7 +58,7 @@ function render(){ //ui upate
         else {
             resultHTML += `<div class="task">
             <div>${list[i].taskContent}</div>
-            <div>
+            <div class="btnbox"> 
                 <button onclick="toggleComplete('${list[i].id}')"><i class="fa-solid fa-circle-check"></i></button>
                 <button onclick="deleteTask('${list[i].id}')"><i class="fa-solid fa-square-minus"></i></button>
             </div>
