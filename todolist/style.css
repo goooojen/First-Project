@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pretendard-Regular';
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    background-color: white;
+    opacity: 90%;
+    min-height: 100vh;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    padding-top: 30px;
+}
+
+body {
+    background-image: url(img/backgroundimg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#user__input{
+    border-radius: 20px;
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.task-area {
+    border:  1px solid lightgrey;
+}
+.task-tabs {
+    display: flex;
+    position: relative;
+    border-bottom:  1px solid lightgrey;
+}
+.task-tabs  div {
+    padding: 1em;
+}
+
+#underline {
+    height: 4px;
+    background-color: pink;
+    position: absolute;
+    width: 90px;
+    top: 56px;
+    left: 0px;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.task-done {
+    text-decoration: line-through;
+    background: #f2f2f2 cover;
+}
+
+.task-tabs div {
+    cursor: pointer;
+}
+
+button {
+    background-color: white;
+    border-style: none;
+    padding: 5px;
+}
+
+p {
+    text-align: center;
+}
+
